@@ -44,10 +44,7 @@ app.use(express.static("public"));
 
 app.get("/", function(req, res) {
 
-  // res.render("home", {
-  //   homeStartingblog: homeStartingContent,
-  //   posts: posts
-  // });
+
 
   Post.find({}, function(err, posts) {
 
